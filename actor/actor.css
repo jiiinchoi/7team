@@ -24,6 +24,7 @@
 .NavContent {
   background-color:ghostwhite;
     border-radius: 0.9375rem;
+    margin-bottom: 20px;
 }
 
 /* #opt1 { */
@@ -38,11 +39,12 @@
 }
 
 .MainContainer {
+  margin-top: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  height: 100vh;
+  height: 900px;
   margin: 0 auto;
   width: 425px;
   border: 1px solid black;
