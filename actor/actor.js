@@ -1,0 +1,28 @@
+// 버튼 요소와 숫자 요소를 가져옵니다.
+var increaseBtn = document.getElementById("increaseBtn");
+var numberElement = document.getElementById("number");
+
+// 숫자 변수를 초기화합니다.
+var number = 0;
+
+// 버튼 클릭 시 이벤트 리스너를 추가합니다.
+increaseBtn.addEventListener("click", function() {
+  // 버튼이 증가/감소 상태인지 확인합니다.
+  if (increaseBtn.textContent === "증가") {
+    // 숫자를 1 증가시킵니다.
+    number += 1;
+  } else {
+    // 숫자를 1 감소시킵니다.
+    number -= 1;
+  }
+  
+  // 변경된 숫자를 화면에 출력합니다.
+  numberElement.textContent = number;
+  
+  // 버튼 텍스트를 변경합니다.
+  if (increaseBtn.textContent === "증가") {
+    increaseBtn.textContent = "감소";
+  } else {
+    increaseBtn.textContent = "증가";
+  }
+});
