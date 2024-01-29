@@ -1,0 +1,18 @@
+.NavContainer {
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  background-color:#eee;
+}
+
+.NavContainer > img {
+  max-width:425px;
+  height: auto;
+  object-fit: cover;
+}
+
+#opt1 {
+  display:grid;
+  /* grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap:1rem; */
+}
