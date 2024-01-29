@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* 상단 영화 이미지 */
+#movie_image {
+  width: 100vw;
+  height: 50vw;
+  background-image: url(image/Avengers-Endgame.jpg);
+  background-size: contain;
+  position: relative;
+}
+#movie_image_content {
+  position: absolute;
+  bottom: 0px;
+  margin: 10px;
+}
+#movie_image_content b {
+  color: #fff;
+  font-size: 4vw;
+}
+#movie_image_content p {
+  color: #ccc;
+  font-size: 3vw;
+}
+/* 코멘트 기능 */
+.comment_title {
+  padding: 10px;
+  border: 1px solid #eee ;
+}
+.comment_title span{
+  margin-right: 10px;
+}
+.comment_content {
+  border: 1px solid #eee;
+}
+.comment_content > div:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  border-bottom: 1px solid #eee;
+}
+.comment_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.comment_top .fa-star, .fa-star-half {
+  color: #fef619;
+}
+.comment_main {
+  padding: 10px;
+}
+.comment_bottom {
+  padding: 10px;
+}
+.comment_bottom .fa-heart {
+  color: #ff4d4d;
+}
+.comment_bottom .fa-comment {
+  color: #ccc;
+}
