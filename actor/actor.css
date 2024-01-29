@@ -25,6 +25,7 @@
   background-color: ghostwhite;
   border-radius: 0.9375rem;
   margin-bottom: 20px;
+  border: 1px solid black;
 }
 
 /* #opt1 { */
@@ -36,6 +37,7 @@
 .GridImage {
   width: 200px;
   height: 300px;
+  border-radius: 0.9375rem;
 }
 
 .MainContainer {
@@ -48,6 +50,7 @@
   margin: 0 auto;
   width: 425px;
   border: 1px solid black;
+  border-radius: 0.9375rem;
 }
 
 .GridContainer {
