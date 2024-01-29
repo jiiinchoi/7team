@@ -1,0 +1,13 @@
+/* 코멘트 기능 */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.comment_title {
+  padding: 10px;
+  border: 1px solid #ccc ;
+}
+.comment_title span{
+  margin-right: 10px;
+}
