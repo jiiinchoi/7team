@@ -21,6 +21,8 @@
 }
 
 .NavContent {
+  background-color: white;
+    border-radius: 0.9375rem;
   right: 20px;
 }
 
