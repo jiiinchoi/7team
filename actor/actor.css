@@ -16,3 +16,28 @@
   /* grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
   grid-gap:1rem; */
 }
+
+.MainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100vh;
+  margin: 0 auto;
+  width: 425px;
+  border: 1px solid black;
+}
+.GridContainer {
+width: 300px;
+height: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 30px;
+}
+
+.GridItem {
+  background-color: #ddd; /* 그리드 아이템 배경색 */
+  padding: 50px; /* 그리드 아이템 안의 여백 */
+  text-align: center;
+}
