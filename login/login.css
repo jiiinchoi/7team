@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#login {
+  text-align: center;
+}
+#login p {
+  margin: 20px auto;
+}
+#login input {
+  box-sizing:border-box;
+  padding: 5px;
+  margin: 5px;
+  min-width: 70vw;
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+}
+.login_button {
+  padding: 5px;
+  margin: 5px;
+  min-width: 70vw;
+  border: none;
+  border-radius: 5px;
+  background-color:#ff9292;
+}
+.login_button:hover {
+  background-color: #ff2222;
+  color: #fff;
+}
+#join:link, #join:visited {
+  text-decoration: none;
+  color: #ff9292;
+}
+#join:hover {
+  color: #ff2222;
+}
