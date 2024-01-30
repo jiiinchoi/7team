@@ -81,6 +81,7 @@
   box-sizing: border-box;
   display: flex;
   overflow: auto;
+  /* width: 100%; */
 }
 .mainFlex div {
   margin: 0px 2vw;
@@ -88,4 +89,22 @@
 .FlexImage {
   width: 30vw;
   height: 40vw;
+}
+@media screen and (min-width: 426px) {
+  .mainFlex {
+    box-sizing: border-box;
+    display: flex;
+    overflow: auto;
+    width: 100%;
+  }
+  .FlexImage {
+    width: 250px;
+    height: 360px;
+  }
+  .movie_name {
+    font-size: 16px;
+  }
+  .movie_sub {
+    font-size: 16px;
+  }
 }
