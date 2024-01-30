@@ -30,16 +30,21 @@
 
 .LikeContainer {
   text-align: center;
+  vertical-align: middle;
   border-radius: 0.9375rem;
   width: 100%;
-  height: 50px;
+  height: 55px;
   border: 1px solid black;
-  
 }
 
 .LikeContent {
-  font-size: 50px;
+  font-size: 45px;
   color:rgba(255, 0, 0, 0.5);
+}
+
+.LikeContent0 {
+  font-size: 25px;
+
 }
 /* #opt1 { */
 /* display:grid; */
