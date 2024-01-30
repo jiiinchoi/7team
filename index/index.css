@@ -43,12 +43,14 @@
   margin: 0px 5px;
   
 }
-#header_login_join button {
-  border: none;
+#header_login_join a {
   padding: 3px;
-  background-color: #fff;
+  font-size: 0.9rem;
 }
-
+#header_login_join a:link, #header_login_join a:visited {
+  color: #aaa;
+  font-weight: normal;
+}
 /* 푸터 영역 */
 #footer {
   width: 100vw;
