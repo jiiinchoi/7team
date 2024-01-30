@@ -59,8 +59,8 @@
   font-size: 0.7rem;
 }
 /* 메인 영역 */
-.MainContainer {
-  width: 70vw;
+.mainContainer {
+  width: 100vw;
 }
 .preview {
   padding: 10px;
