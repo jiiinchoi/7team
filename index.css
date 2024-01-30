@@ -1,0 +1,17 @@
+
+.MainContainer {
+  width: 70vw;
+}
+
+
+.mainFlex {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.FlexImage {
+
+  width: 15vw;
+  height: 20vw;
+}
