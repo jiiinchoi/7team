@@ -85,3 +85,47 @@
   overflow: hidden;
   pointer-events: none;
 }
+
+@media screen and (min-width: 426px) {
+  /* 상단 영화 이미지 영역 */
+  #movie_image {
+    height: 30vw;
+    background-size: cover;
+    position: relative;
+  }
+  #movie_image_content {
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+  }
+  #movie_image_content b {
+    font-size: 2vw;
+  }
+  #movie_image_content p {
+    font-size: 1vw;
+  }
+  /* 코멘트 영역 */
+  #comment {
+    margin: 40px 70px;
+  }
+  .comment_title {
+    font-size: 1.25rem;
+  }
+  .comment_content {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 300px 300px;
+    border: none;
+  }
+  .comment_content > div {
+    border: 1px solid #eee;
+    position: relative;
+  }
+  .comment_bottom {
+    position: absolute;
+    bottom: 0px;
+  }
+  .comment_content > div:after {
+    display: none;
+  }
+}
