@@ -3,22 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>블랙위도우</title>
+  <title>토르</title>
   <link rel="stylesheet" href="actor.css">
+  <script src="https://kit.fontawesome.com/63b195046c.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="NavContainer" id="opt1">
     <div>
-      <img class="NavImage" src="./img/actor_blackwidow_01.png" alt="블랙위도우">
+      <img class="NavImage" src="./img/actor_thor_01.png" alt="토르">
     </div>
     <div class="NavContent">
-      <header><h1 "> 블랙위도우</h1></header>
-      <p>마블 시네마틱 유니버스 최초의 여성 히어로로 과거 KGB 소속의 악명 높은 스파이이자 암살자였으며, 호크아이가 목숨을 구해준 후 전향했다.</p>
+      <header><h1> 토르 </h1></header>
+      <p>&nbsp;아스가르드의 왕세자로, 신들의 제왕 오딘의 맏아들이다. 과거 정복군주였던 오딘의 호전적인 성격을 물려받은 토르는 아버지처럼 전쟁군주로서 적들에게 위명을 떨치겠다고 호언한다.</p>
     </div>
-
+    <div class="LikeContainer">
+      <button style="border: none; background: transparent;">
+        <!-- <i class="fas fa-heart fa-beat LikeContent" style="--fa-animation-duration: 0.5s;"> 좋아요 </i> -->
+        <i class="fa-regular fa-heart LikeContent0" onclick="changeIcon(this)"> 좋아요 <span id="like-count">562</span> 명이 <p>이 인물을 좋아합니다</p> </i>
+      </button>
+    </div>
   </div>
-
-
+  
+    <!-- mainContainer -->
+    <main class="MainContainer">  
+      <div class="GridContainer">
+        <div class="GridItem"><img class="GridImage" src="./img/poster_thor.png" alt=""></div>
+        <div class="GridItem"><img class="GridImage" src="./img/poster_InfinityWar.png" alt=""></div>
+        <div class="GridItem"><img class="GridImage" src="./img/poster_LoveAndThunder.png" alt=""></div>
+        <div class="GridItem"><img class="GridImage" src="./img/poster_Endgame.png" alt=""></div>
+      </div>
+    </main>
   <script src="actor.js"></script>
-</body>
-</html>
+  </body>
+  </html>

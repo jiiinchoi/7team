@@ -3,9 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>스파이더맨</title>
+  <link rel="stylesheet" href="actor.css">
+  <script src="https://kit.fontawesome.com/63b195046c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="NavContainer" id="opt1">
+    <div>
+      <img class="NavImage" src="./img/actor_spiderman_01.png" alt="스파이더맨">
+    </div>
+    <div class="NavContent">
+      <header><h1> 스파이더맨 </h1></header>
+      <p>&nbsp;어벤져스 멤버들 중 가장 막내이자 유일한 10대 히어로인 만큼 발랄하고 수다스러우며 청소년 특유의 미성숙한 면모도 함께 가진 성격의 소유자이다</p>
+    </div>
+    <div class="LikeContainer">
+      <button style="border: none; background: transparent;">
+        <!-- <i class="fas fa-heart fa-beat LikeContent" style="--fa-animation-duration: 0.5s;"> 좋아요 </i> -->
+        <i class="fa-regular fa-heart LikeContent0" onclick="changeIcon(this)"> 좋아요 <span id="like-count">1314</span> 명이 <p>이 인물을 좋아합니다</p> </i>
+      </button>
+    </div>
+  </div>
   
+
+  <!-- mainContainer -->
+  <main class="MainContainer">  
+    <div class="GridContainer">
+      <div class="GridItem"><img class="GridImage" src="./img/poster_NoWayHome.png" alt=""></div>
+      <div class="GridItem"><img class="GridImage" src="./img/poster_CivilWar.png" alt=""></div>
+      <div class="GridItem"><img class="GridImage" src="./img/poster_Endgame.png" alt=""></div>
+      <div class="GridItem"><img class="GridImage" src="./img/poster_HomeComing.png" alt=""></div>
+    </div>
+  </main>
+<script src="actor.js"></script>
 </body>
 </html>
