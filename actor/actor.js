@@ -26,3 +26,62 @@ increaseBtn.addEventListener("click", function() {
     increaseBtn.textContent = "증가";
   }
 });
+
+// function changeIcon(icon) {
+//   if (icon.classList.contains("fa-solid")) {
+//     icon.classList.remove("fa-solid");
+//     icon.classList.remove("fa-beat");
+//     icon.classList.remove("LikeContent");
+//     icon.style.removeProperty("--fa-animation-duration");
+//   } else {
+//     icon.classList.add("fa-solid");
+//     icon.classList.add("fa-beat");
+//     icon.classList.add("LikeContent");
+//     icon.style.setProperty("--fa-animation-duration", "1s");
+//   }
+// }
+
+// function changeIcon(icon) {
+//   const likeCount = document.getElementById("like-count");
+
+//   if (icon.classList.contains("fa-solid")) {
+//     icon.classList.remove("fa-solid");
+//     icon.classList.remove("fa-beat");
+//     icon.classList.remove("LikeContent");
+//     icon.style.removeProperty("--fa-animation-duration");
+
+//     likeCount.innerHTML = parseInt(likeCount.innerHTML) - 1;
+//   } else {
+//     icon.classList.add("fa-solid");
+//     icon.classList.add("fa-beat");
+//     icon.classList.add("LikeContent");
+//     icon.style.setProperty("--fa-animation-duration", "1s");
+
+//     likeCount.innerHTML = parseInt(likeCount.innerHTML) + 1;
+//   }
+// }
+
+function changeIcon(icon) {
+  const likeCount = document.getElementById("like-count");
+
+  if (icon.classList.contains("fa-solid")) {
+    icon.classList.remove("fa-solid");
+    icon.classList.remove("fa-beat");
+    icon.classList.remove("LikeContent");
+    icon.style.removeProperty("--fa-animation-duration");
+
+    likeCount.innerHTML = parseInt(likeCount.innerHTML) - 1;
+  } else {
+    icon.classList.add("fa-solid");
+    icon.classList.add("fa-beat");
+    icon.classList.add("LikeContent");
+    icon.style.setProperty("--fa-animation-duration", "1s");
+
+    likeCount.innerHTML = parseInt(likeCount.innerHTML) + 1;
+
+    // Remove the "fa-beat" class after 3 seconds to stop the animation
+    setTimeout(() => {
+      icon.classList.remove("fa-beat");
+    }, 2000);
+  }
+}

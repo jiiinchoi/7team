@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>블랙위도우</title>
   <link rel="stylesheet" href="actor.css">
   <script src="https://kit.fontawesome.com/63b195046c.js" crossorigin="anonymous"></script>
 </head>
@@ -18,10 +18,10 @@
     </div>
     <div class="LikeContainer">
       <button style="border: none; background: transparent;">
-        <i class="fas fa-heart fa-beat LikeContent" style="--fa-animation-duration: 0.5s;"></i>
+        <!-- <i class="fas fa-heart fa-beat LikeContent" style="--fa-animation-duration: 0.5s;"> 좋아요 </i> -->
+        <i class="fa-regular fa-heart LikeContent0" onclick="changeIcon(this)"> 좋아요 <span id="like-count">231</span> 명이 <p>이 인물을 좋아합니다</p> </i>
       </button>
     </div>
-        
   </div>
   
 
@@ -34,5 +34,6 @@
       <div class="GridItem"><img class="GridImage" src="./img/poster_WinterSoldier.png" alt=""></div>
     </div>
   </main>
+<script src="actor.js"></script>
 </body>
 </html>
