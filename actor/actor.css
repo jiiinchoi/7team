@@ -86,3 +86,44 @@
   /* padding: 50px; 그리드 아이템 안의 여백 */
   text-align: center;
 }
+
+
+@media screen and (min-width: 426px) {
+  .NavFlex426 {
+    display: flex;
+    flex-direction: row;
+  }
+  .NavContainer {
+    margin: 0 auto;
+    width: 70vw;
+    justify-content: center;
+    /* background-color:#eee; */
+    /* display: flex; */
+  }
+  .GridImage {
+    width: 34vw;
+    height: 300px;
+    border-radius: 0.9375rem;
+  }
+  .MainContainer {
+    border: none;
+  }
+  .NavImage {
+    height: 100%;
+    border-radius: 0.9375rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .mainContainer {
+    height: 5000px;
+  }
+  .GridImage {
+    margin-bottom: -280px;
+    width: 34vw;
+    height: 500px;
+    border-radius: 0.9375rem;
+    gap: 50px;
+  }
+  
+}
