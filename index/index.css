@@ -2,7 +2,7 @@
   padding: 0px;
   margin: 0px;
 }
-/* 헤더 부분 */
+/* 헤더 영역 */
 #header {
   margin: 20px;
   display: flex;
@@ -24,7 +24,7 @@
   padding-left: 30px;
   min-width: 70vw;
   background-color: #eee;
-  background-image: url(search.png);
+  background-image: url(img/search.png);
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: left 5px center;
@@ -47,5 +47,45 @@
   border: none;
   padding: 3px;
   background-color: #fff;
+}
 
+/* 푸터 영역 */
+#footer {
+  width: 100vw;
+  background-color: #aaa;
+  padding: 10px;
+  font-size: 0.7rem;
+}
+/* 메인 영역 */
+.MainContainer {
+  width: 70vw;
+}
+.preview {
+  padding: 10px;
+  font-weight: bold;
+}
+.main {
+  margin: 10vw 0px;
+}
+.main_rank {
+  padding: 10px;
+  font-weight: bold;
+}
+.movie_name {
+  font-size: 2.5vw;
+}
+.movie_sub {
+  font-size: 2vw;
+}
+.mainFlex {
+  box-sizing: border-box;
+  display: flex;
+  overflow: auto;
+}
+.mainFlex div {
+  margin: 0px 2vw;
+}
+.FlexImage {
+  width: 30vw;
+  height: 40vw;
 }
