@@ -81,7 +81,7 @@
   width: 0;
   position: absolute; 
   left: 0;
-  color:rgb(254, 246, 25);
+  color: yellow;
   overflow: hidden;
   pointer-events: none;
 }
