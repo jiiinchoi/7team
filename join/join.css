@@ -2,13 +2,13 @@
   margin: 0px;
   padding: 0px;
 }
-#login {
+#join {
   text-align: center;
 }
-#login p {
+#join p {
   margin: 20px auto;
 }
-#login input {
+#join input {
   box-sizing:border-box;
   padding: 5px;
   margin: 5px;
@@ -17,7 +17,7 @@
   border: none;
   border-radius: 5px;
 }
-.login_button {
+.join_button {
   padding: 5px;
   margin: 5px;
   min-width: 70vw;
@@ -25,14 +25,7 @@
   border-radius: 5px;
   background-color:#ff9292;
 }
-.login_button:hover {
+.join_button:hover {
   background-color: #ff2222;
   color: #fff;
-}
-#join_page:link, #join:visited {
-  text-decoration: none;
-  color: #ff9292;
-}
-#join_page:hover {
-  color: #ff2222;
 }
