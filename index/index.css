@@ -149,4 +149,7 @@
     font-size: 2rem;
     margin: 1.25rem;
   }
+  #footer p {
+    font-size: 1rem;
+  }
 }
