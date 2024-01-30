@@ -104,7 +104,7 @@
   width: 30vw;
   height: 40vw;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 426px) {
   .mainVideo {
     width:100%;  
     height:600px;
@@ -124,5 +124,29 @@
   }
   .movie_sub {
     font-size: 16px;
+  }
+  /* 헤더 영역 */
+  #header {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  #header > a {
+    margin: 0px;
+  }
+  #header > ul {
+    position: absolute;
+    right: 0px;
+    display: flex;
+  }
+  #search {
+    min-width: 200px;
+  }
+  .preview, .main_rank {
+    font-size: 2rem;
+    margin: 1.25rem;
   }
 }
