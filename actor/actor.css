@@ -38,8 +38,13 @@
 }
 
 .LikeContent {
-  font-size: 50px;
+  font-size: 45px;
   color:rgba(255, 0, 0, 0.5);
+}
+
+.LikeContent0 {
+  font-size: 45px;
+
 }
 /* #opt1 { */
 /* display:grid; */

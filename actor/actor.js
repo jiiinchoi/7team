@@ -26,3 +26,27 @@ increaseBtn.addEventListener("click", function() {
     increaseBtn.textContent = "증가";
   }
 });
+
+// function changeIcon(icon) {
+//   if (icon.classList.contains("fa-solid")) {
+//     icon.classList.remove("fa-solid");
+//     icon.classList.add("fa-regular");
+//   } else {
+//     icon.classList.remove("fa-regular");
+//     icon.classList.add("fa-solid");
+//   }
+// }
+
+function changeIcon(icon) {
+  if (icon.classList.contains("fa-solid")) {
+    icon.classList.remove("fa-solid");
+    icon.classList.remove("fa-beat");
+    icon.classList.remove("LikeContent");
+    icon.style.removeProperty("--fa-animation-duration");
+  } else {
+    icon.classList.add("fa-solid");
+    icon.classList.add("fa-beat");
+    icon.classList.add("LikeContent");
+    icon.style.setProperty("--fa-animation-duration", "1s");
+  }
+}
