@@ -96,6 +96,154 @@
   color: #ccc;
 }
 
+/* <!-- 코멘트 생성 --> */
+
+#mycomment_border {
+  border: 1px solid #ddd;
+  margin: 0px auto;
+}
+
+#mycomment_tb {
+  margin: 0px 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vw;
+  position: relative;
+  bottom: auto;
+}
+
+#mycomment_tb input[type="text"] {
+  width: 99%;
+  height: 80%;
+  vertical-align: top;
+}
+
+#mycomment-count {
+  position: absolute;
+  margin-top: 5px;
+  text-align: right;
+  font-size: 1rem;
+}
+
+
+#mycomment_tb input[type="text"]::placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+#my-char-count { /* 수정된 선택자 */
+  position: absolute;
+  bottom: 0px; /* 위치 조정 */
+  left: 0;
+  text-align: right;
+  font-size: 1.2rem;
+  color:gray
+}
+
+
+
+.mycomment-input {
+  margin: 0px 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 20vw;
+  position: relative;
+  bottom: auto;
+}
+
+.mycomment-button {
+  margin: 0px 10px;
+  /* border: 1px solid #ddd; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 7vw;
+  position: relative;
+  bottom: auto;
+}
+
+#mycomment {
+  width: 99%;
+  height: 80%;
+  vertical-align: top;
+  font-size: 1.2rem;
+}
+
+
+#mycomment_top {
+  margin: 20px 10px 0;
+  /* border: 1px solid #ddd; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large
+  /* height: 10vw; */
+  /* padding: 0.5rem; */
+}
+
+#comment_create {
+  margin: 0px 10px;
+  /* border: 1px solid #ddd; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vw;
+}
+
+.commentbutton {
+  width: 100%;
+  height: 100%;
+  background-color: #ff2f6e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 500px) {
+  #my-char-count {
+    font-size: 0.7rem; /* 모바일 환경에서 원하는 크기로 조정해주세요 */
+  }
+  #mycomment {
+    font-size: 0.9rem;
+  }
+  #mycomment_top {
+    font-size:medium
+  }
+}
+
+@media screen and (min-width: 500px) {
+  ::placeholder {
+    font-size: 1.2rem; /* PC 환경에서 원하는 크기로 조정해주세요 */
+  }
+  #mycomment_border {
+    margin: 5vw 10vw;
+  }
+}
+
+/* #comment_create:first-of-type {
+  margin-top: 40px; 첫 번째 요소의 상단 마진 설정
+} */
+
+.rating-text {
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#result {
+  font-size: x-large;
+  font-style: bold;
+  padding-right: 0.2em;
+}
 
 .star {
   position: relative;
@@ -182,6 +330,10 @@
   padding: 10px;
   font-size: 0.7rem;
 }
+
+
+
+
 
 @media screen and (min-width: 426px) {
   /* 상단 영화 이미지 영역 */
@@ -295,3 +447,5 @@
     font-size: 1rem;
   }
 }
+
+
