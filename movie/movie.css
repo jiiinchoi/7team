@@ -51,6 +51,12 @@
   text-align:left;
   word-spacing: 0.5vw;
 }
+.movie_main_acter_box {
+  display: none;
+}
+.movie_main_score .fa-star, .movie_main_score .fa-star-half {
+  display: none;
+}
 /* 코멘트 기능 */
 .comment_title {
   padding: 10px;
@@ -132,6 +138,48 @@
   }
   #movie_image_content p {
     font-size: 1vw;
+  }
+  /* 영화 줄거리 영역 */
+  .movie_main {
+    margin: 5vw 10vw;
+    align-items:start;
+    font-size: 1vw;
+  }
+  .movie_main_content {
+    background-color: #eee;
+    height: 27vw;
+  }
+  .movie_main img {
+    width: 18vw;
+    height: 27vw;
+  }
+  .movie_main_score {
+    margin-top: 1vw;
+  }
+  .movie_main_score .fa-star, .movie_main_score .fa-star-half {
+    display: inline-block;
+  }
+  .movie_main_bold1 {
+    margin-top: 0.5vw;
+  }
+  .movie_main_content .fa-star, .fa-star-half {
+    color: #fef619;
+  }
+  .movie_main_story {
+    width: 20vw;
+    margin: 0px auto;
+  }
+  .movie_main_acter_box {
+    display: block;
+  }
+  .movie_main_acter {
+    width: 20vw;
+    margin: 0px auto;
+    text-align:left;
+    /* word-spacing: 0.5vw; */
+  }
+  .movie_main_story_acter {
+    display: flex;
   }
   /* 코멘트 영역 */
   #comment {
