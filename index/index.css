@@ -2,6 +2,9 @@
   padding: 0px;
   margin: 0px;
 }
+body {
+  width: 100vw;
+}
 /* 헤더 영역 */
 #header {
   margin: 20px;
@@ -9,10 +12,16 @@
   flex-direction: column;
   align-items: center;
 }
-
 #header a {
+  text-align: center;
+}
+#header .header_title {
   font-size: 1.5rem;
   margin-bottom: 10px;
+}
+#header .header_subtitle {
+  color: #ccc;
+  font-size: 0.8rem;
 }
 #header a:link, #header a:visited {
   text-decoration: none;
@@ -62,22 +71,22 @@
 .mainContainer {
   width: 100vw;
 }
-.preview {
+/* .preview {
   padding: 10px;
   font-weight: bold;
-}
+} */
 
-.mainVideoBox {
+/* .mainVideoBox {
 
   width: 100%;
-}
-.mainVideo {
+} */
+/* .mainVideo {
   display:flex; 
   align-items: center; 
   justify-content: center;
   width:100%;  
   height:400px;
-}
+} */
 .main {
   margin: 10vw 0px;
 }
@@ -95,16 +104,21 @@
   box-sizing: border-box;
   display: flex;
   overflow: auto;
-  /* width: 100%; */
+  width: 100%;
 }
-.mainFlex div {
+.mainFlex .movie_box {
   margin: 0px 2vw;
 }
+
 .FlexImage {
   width: 30vw;
   height: 40vw;
 }
+.arrow {
+  display: none;
+}
 @media screen and (min-width: 426px) {
+  /* 메인 영역 */
   .mainVideo {
     width:100%;  
     height:600px;
@@ -112,22 +126,49 @@
   .mainFlex {
     box-sizing: border-box;
     display: flex;
+    /* justify-content: left; */
     overflow: auto;
     width: 100%;
   }
+  .mainFlex .movie_box {
+    margin: 0vw 1.9vw;
+  }
   .FlexImage {
-    width: 250px;
-    height: 360px;
+    width: 14vw;
+    height: 21vw;
   }
   .movie_name {
-    font-size: 16px;
+    font-size: 1.0vw;
   }
   .movie_sub {
-    font-size: 16px;
+    font-size: 0.8vw;
   }
-  /* 헤더 영역 */
+  .main {
+    margin: 100px 5vw;
+  }
+  .mainFlex {
+    position: relative;
+    padding: 0px 0.5vw;
+    overflow: visible;
+  }
+  .arrow {
+    display: inline-block;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    border: none;
+    background-color: #ccc;
+  }
+  #left, #right {
+    position: absolute;
+    right: -0.5vw;
+    top: 40%;
+    font-weight: bold;
+    font-size: 1vw;
+  }
+  /* 헤더, 푸터 영역 */
   #header {
-    margin: 20px;
+    margin: 15px 80px;
     display: flex;
     flex-direction: row;
     align-items: center;

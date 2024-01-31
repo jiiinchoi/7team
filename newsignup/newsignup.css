@@ -1,0 +1,30 @@
+
+
+.login-language {
+  background: none;
+  padding: 0px;
+  border: none;
+  margin: 0px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(74, 74, 74);
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 20px;
+
+  cursor: pointer;
+}
+
+.login-language-style {
+  display: inline-block;
+  margin: 0px 12px 0px 0px;
+}
+
+.login-caret-style {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 0px 0px 0px 6px;
+}
