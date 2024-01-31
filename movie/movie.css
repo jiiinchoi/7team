@@ -63,15 +63,55 @@
 }
 
 /* <!-- 코멘트 생성 --> */
-#comment_create {
-  margin: 40px 70px;
-  border: 1px solid black;
+
+#mycomment_border {
+  border: 1px solid #ddd;
+  margin: 0px auto;
+}
+
+#mycomment_tb {
+  margin: 0px 10px;
+  border: 1px solid #ddd;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 20vw;
-
 }
+
+#mycomment_tb input[type="text"] {
+  width: 99%;
+  height: 95%;
+}
+
+#mycomment_tb input[type="text"]::placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#mycomment_top {
+  margin: 20px 10px 0;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 10vw; */
+  /* padding: 0.5rem; */
+}
+
+#comment_create {
+  margin: 0px 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vw;
+}
+
+/* #comment_create:first-of-type {
+  margin-top: 40px; 첫 번째 요소의 상단 마진 설정
+} */
 
 .rating-text {
   margin-left: 10px;
@@ -81,7 +121,7 @@
 }
 
 #result {
-  font-size: xx-large;
+  font-size: x-large;
   font-style: bold;
   padding-right: 0.2em;
 }
