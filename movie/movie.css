@@ -144,18 +144,19 @@
 
 #mycomment_top {
   margin: 20px 10px 0;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: x-large
   /* height: 10vw; */
   /* padding: 0.5rem; */
 }
 
 #comment_create {
   margin: 0px 10px;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,6 +179,9 @@
   }
   #mycomment {
     font-size: 0.9rem;
+  }
+  #mycomment_top {
+    font-size:medium
   }
 }
 
