@@ -16,3 +16,30 @@ window.addEventListener('resize', function() {
     document.querySelector("#mycomment_tb input[type='text']").setAttribute("placeholder", "평점은 최대 500자까지 등록 가능합니다. 영화와 상관 없는 내용은 제재를 받을 수 있습니다");
   }
 });
+
+
+// const input = document.querySelector("#mycomment_tb input[type='text']");
+// const charCount = document.createElement("span");
+
+// input.addEventListener("input", () => {
+//   const textLength = input.value.length;
+//   const remainingCharacters = 500 - textLength;
+//   charCount.textContent = `(${textLength}/500) 남은 텍스트: ${remainingCharacters}`;
+
+//   charCount.style.position = "absolute";
+//   charCount.style.bottom = "-10px";
+//   charCount.style.left = "5px";
+
+//   input.parentNode.appendChild(charCount);
+// });
+
+
+
+const input = document.querySelector("#mycomment_tb input[type='text']");
+const charCount = document.querySelector("#my-char-count");
+
+input.addEventListener("input", () => {
+  const textLength = input.value.length;
+  const remainingCharacters = 500 - textLength;
+  charCount.textContent = `(${textLength}/500) 남은 텍스트: ${remainingCharacters}`;
+});

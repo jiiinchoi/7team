@@ -80,13 +80,29 @@
 
 #mycomment_tb input[type="text"] {
   width: 99%;
-  height: 95%;
+  height: 70%;
+  vertical-align: top;
 }
+
+#mycomment-count {
+  position: absolute;
+  margin-top: 5px;
+  text-align: right;
+  font-size: 1rem;
+}
+
 
 #mycomment_tb input[type="text"]::placeholder {
   position: absolute;
   top: 0;
   left: 0;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 500px) {
+  #mycomment_tb input[type="text"]::placeholder {
+    font-size: 1rem;
+  }
 }
 
 #mycomment_top {
