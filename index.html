@@ -9,7 +9,7 @@
 <body>
   <header>
     <div id="header">
-      <a href="index.html">MARVEL PEDIA</a>
+      <a href="index.html"><p class="header_subtitle">마블 영화의 모든 것</p><p class="header_title">MARVEL PEDIA</p></a>
       <ul>
         <li><input type="text" id="search"></li>
         <ul id="header_login_join">
@@ -22,10 +22,11 @@
   </header>
   <main>
     <div class="mainContainer">
-      <p class="preview">신작 영화 예고편</p>
-      <div class="mainVideoBox">
+      <!-- <p class="preview">신작 영화 예고편</p> -->
+      <video src="index/video/preview.mp4" width="100%" muted autoplay></video>
+      <!-- <div class="mainVideoBox">
         <iframe class="mainVideo" src="https://www.youtube.com/embed/h3rKe6DdC18?autoplay=1" frameborder="0" allowfullscreen></iframe>
-      </div>
+      </div> -->
       <div class="main">
         <p class="main_rank">국내 관객수 순위</p>
         <div class="mainFlex">
@@ -72,7 +73,7 @@
         </div>
       </div>
       <div class="main">
-        <p class="main_rank">평점 순위</p>
+        <p class="main_rank">WATCHA 평점 순위</p>
         <div class="mainFlex">
           <div><img class="FlexImage" src="./index/img/poster_ironman1.png" alt="아이언맨1">
             <p class="movie_name">1위 | 아이언맨</p>
