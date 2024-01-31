@@ -36,3 +36,14 @@
 #join_page:hover {
   color: #ff2222;
 }
+
+@media screen and (min-width: 426px) {
+  #login input {
+    min-width: 40vw;
+    padding: 10px;
+  }
+  .login_button {
+    min-width: 40vw;
+    padding: 10px;
+  }
+}
