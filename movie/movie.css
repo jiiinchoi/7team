@@ -106,14 +106,16 @@
   bottom: 0px; /* 위치 조정 */
   left: 0;
   text-align: right;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
+
+
 
 .mycomment-input {
   margin: 0px 10px;
   border: 1px solid #ddd;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   height: 20vw;
   position: relative;
@@ -124,14 +126,9 @@
   width: 99%;
   height: 80%;
   vertical-align: top;
+  font-size: 1.2rem;
 }
 
-
-@media screen and (max-width: 500px) {
-  #mycomment_tb input[type="text"]::placeholder {
-    font-size: 1rem;
-  }
-}
 
 #mycomment_top {
   margin: 20px 10px 0;
@@ -151,6 +148,21 @@
   align-items: center;
   justify-content: center;
   height: 10vw;
+}
+
+@media screen and (max-width: 500px) {
+  #my-char-count {
+    font-size: 0.7rem; /* 모바일 환경에서 원하는 크기로 조정해주세요 */
+  }
+  #mycomment {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  ::placeholder {
+    font-size: 1.2rem; /* PC 환경에서 원하는 크기로 조정해주세요 */
+  }
 }
 
 /* #comment_create:first-of-type {
@@ -193,6 +205,10 @@
   overflow: hidden;
   pointer-events: none;
 }
+
+
+
+
 
 @media screen and (min-width: 426px) {
   /* 상단 영화 이미지 영역 */
