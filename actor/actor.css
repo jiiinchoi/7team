@@ -1,5 +1,6 @@
 * {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
 }
 /* nav 영역 */
 .NavContainer {
@@ -88,12 +89,99 @@
   /* padding: 50px; 그리드 아이템 안의 여백 */
   text-align: center;
 }
-
+/* 헤더 영역 */
+#header {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#header a {
+  text-align: center;
+}
+#header .header_title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+#header .header_subtitle {
+  color: #ccc;
+  font-size: 0.8rem;
+}
+#header a:link, #header a:visited {
+  text-decoration: none;
+  color:#5089fa;
+  font-weight: bold;
+}
+#search {
+  padding: 7px;
+  padding-left: 30px;
+  min-width: 70vw;
+  background-color: #eee;
+  background-image: url(img/search.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: left 5px center;
+  opacity: 0.5;
+  border: none;
+  border-radius: 5px;
+}
+#header ul {
+  list-style: none;
+}
+#header_login_join {
+  display: flex;
+  justify-content: center;
+}
+#header_login_join li {
+  margin: 0px 5px;
+  
+}
+#header_login_join a {
+  padding: 3px;
+  font-size: 0.9rem;
+}
+#header_login_join a:link, #header_login_join a:visited {
+  color: #aaa;
+  font-weight: normal;
+}
+/* 푸터 영역 */
+#footer {
+  width: 100vw;
+  background-color: #aaa;
+  padding: 10px;
+  font-size: 0.7rem;
+}
 
 @media screen and (min-width: 426px) {
   .NavFlex426 {
     display: flex;
     flex-direction: row;
   }
-
+  /* 헤더, 푸터 영역 */
+  #header {
+    margin: 15px 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  #header > a {
+    margin: 0px;
+  }
+  #header > ul {
+    position: absolute;
+    right: 0px;
+    display: flex;
+  }
+  #search {
+    min-width: 200px;
+  }
+  .preview, .main_rank {
+    font-size: 2rem;
+    margin: 1.25rem;
+  }
+  #footer p {
+    font-size: 1rem;
+  }
 }
