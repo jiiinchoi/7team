@@ -8,6 +8,18 @@
   <script src="https://kit.fontawesome.com/63b195046c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <header>
+    <div id="header">
+      <a href="../index.html"><p class="header_subtitle">마블 영화의 모든 것</p><p class="header_title">MARVEL PEDIA</p></a>
+      <ul>
+        <li><input type="text" id="search"></li>
+        <ul id="header_login_join">
+          <li><a href="../newlogin/newlogin.html" id="header_login">로그인</a></li>|
+          <li><a href="../newsignup/newsignup.html" id="header_join">회원가입</a></li>
+        </ul>
+      </ul>
+    </div>
+  </header>
   <!-- 상단 영화 이미지 -->
   <div id="movie_image">
     <div id="movie_image_content">
@@ -16,6 +28,59 @@
       <p>3시간 1분ㆍ12세</p>
     </div>
   </div>
+  <!-- 영화 줄거리 부분 -->
+  <div class="movie_main">
+    <img src="../index/img/poster_Endgame.png" alt="">
+    <div class="movie_main_content">
+      <div class="movie_main_score">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <!-- <i class="fas fa-star-half"></i> -->
+        <p class="movie_main_bold1">평점 | 4.1 / 5.0</p>
+      </div>
+      <div class="movie_main_story_acter">
+        <div class="movie_main_story_box">
+          <p class="movie_main_bold2">영화 줄거리</p>
+          <p class="movie_main_story">인피니티 워 이후 절반만 살아남은 지구 마지막 희망이 된 어벤져스 먼저 떠난 그들을 위해 모든 것을 걸었다! 위대한 어벤져스 운명을 바꿀 최후의 전쟁이 펼쳐진다!</p>
+        </div>
+        <div class="movie_main_acter_box">
+          <p class="movie_main_bold2">감독/출연</p>
+          <p class="movie_main_acter">감독 : 안소니 루소, 조 루소</p>
+          <p class="movie_main_acter">출연 : 로버트 다우니 주니어, 크리스 에반스, 크리스 헴스워스, 마크 러팔로</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 코멘트 생성 -->
+  <div id="mycomment_border">
+    <div id="mycomment_top"> 
+      <h3>감상평</h3> 
+      <p>별점을 선택해주세요</p> 
+    </div>
+    <div id="comment_create">
+      <span class="star">
+        ★★★★★
+        <span>★★★★★</span>
+        <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+      </span>
+      <div class="rating-text">
+        <span id="result"></span>
+      </div>
+    </div>
+    <div class="mycomment-input">
+      <textarea id="mycomment" placeholder="평점은 최대 500자까지 등록 가능합니다. 영화와 상관 없는 내용은 제재를 받을 수 있습니다."></textarea>
+      <span id="my-char-count"></span>
+    </div>
+      <div class="mycomment-button">
+        <button class="commentbutton">등록하기</button>
+      </div>
+  
+    </div>
+    </div>
+  </div>
+
   <!-- 코멘트 기능 -->
   <div id="comment">
     <div class="comment_title">
@@ -135,7 +200,14 @@
     <span>★★★★★</span>
     <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
   </span>
-
+  <footer>
+    <div id="footer">
+      <p>서비스 이용약관 | 개인정보 처리방침 | 회사 안내</p>
+      <p>고객센터 | 02-123-1234</p>
+      <p>주식회사 마블피디아 | 부산광역시 남구 용소로 45</p>
+      <p>사업자 등록번호 123-00-12345</p>
+    </div>
+  </footer>
 <script src="movie.js"></script>
 </body>
 </html>
