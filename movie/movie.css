@@ -109,6 +109,24 @@
   font-size: 1rem;
 }
 
+.mycomment-input {
+  margin: 0px 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vw;
+  position: relative;
+  bottom: auto;
+}
+
+#mycomment {
+  width: 99%;
+  height: 80%;
+  vertical-align: top;
+}
+
+
 @media screen and (max-width: 500px) {
   #mycomment_tb input[type="text"]::placeholder {
     font-size: 1rem;

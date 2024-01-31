@@ -35,11 +35,40 @@ window.addEventListener('resize', function() {
 
 
 
-const input = document.querySelector("#mycomment_tb input[type='text']");
+// const input = document.querySelector("#mycomment_tb input[type='text']");
+// const charCount = document.querySelector("#my-char-count");
+
+// input.addEventListener("input", () => {
+//   const textLength = input.value.length;
+//   const remainingCharacters = 500 - textLength;
+//   charCount.textContent = `(${textLength}/500) 남은 텍스트: ${remainingCharacters}`;
+// });
+
+
+
+// const textarea = document.querySelector("#mycomment");
+// const charCount = document.querySelector("#my-char-count");
+
+// textarea.addEventListener("input", () => {
+//   const textLength = textarea.value.replace(/\s/g, "").length;
+//   const remainingCharacters = 500 - textLength;
+//   charCount.textContent = `(${textLength}/500) 남은 텍스트: ${remainingCharacters}`;
+// });
+
+// const textLength = textarea.value.length;
+
+const textarea = document.querySelector("#mycomment");
 const charCount = document.querySelector("#my-char-count");
 
-input.addEventListener("input", () => {
-  const textLength = input.value.length;
+charCount.textContent = "(0/500) 남은 텍스트: 500";
+
+textarea.addEventListener("input", () => {
+  const textLength = textarea.value.trim().length;
   const remainingCharacters = 500 - textLength;
-  charCount.textContent = `(${textLength}/500) 남은 텍스트: ${remainingCharacters}`;
+
+  if (textarea.value !== null && textarea.value !== "") {
+    charCount.textContent = `(${textLength}/500) 남은 텍스트: ${remainingCharacters}`;
+  } else {
+    charCount.textContent = "(0/500) 남은 텍스트: 500";
+  }
 });
