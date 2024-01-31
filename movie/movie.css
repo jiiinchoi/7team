@@ -62,6 +62,29 @@
   color: #ccc;
 }
 
+/* <!-- 코멘트 생성 --> */
+#comment_create {
+  margin: 40px 70px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vw;
+
+}
+
+.rating-text {
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#result {
+  font-size: xx-large;
+  font-style: bold;
+  padding-right: 0.2em;
+}
 
 .star {
   position: relative;
