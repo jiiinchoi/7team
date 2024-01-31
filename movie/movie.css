@@ -23,6 +23,34 @@
   color: #ccc;
   font-size: 3vw;
 }
+/* 영화 줄거리 부분 */
+.movie_main {
+  margin: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie_main img {
+  width: 30vw;
+  height: 45vw;
+}
+.movie_main_content div {
+  width: 50vw;
+  text-align: center;
+}
+.movie_main_bold1 {
+  font-weight: bold;
+  margin-bottom: 3vw;
+}
+.movie_main_bold2 {
+  font-weight: bold;
+  margin-bottom: 1.5vw;
+}
+.movie_main_story {
+  text-align:left;
+  word-spacing: 0.5vw;
+}
 /* 코멘트 기능 */
 .comment_title {
   padding: 10px;
