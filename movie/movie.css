@@ -76,11 +76,13 @@
   align-items: center;
   justify-content: center;
   height: 20vw;
+  position: relative;
+  bottom: auto;
 }
 
 #mycomment_tb input[type="text"] {
   width: 99%;
-  height: 70%;
+  height: 80%;
   vertical-align: top;
 }
 
@@ -97,6 +99,14 @@
   top: 0;
   left: 0;
   font-size: 1.2rem;
+}
+
+#my-char-count { /* 수정된 선택자 */
+  position: absolute;
+  bottom: 0px; /* 위치 조정 */
+  left: 0;
+  text-align: right;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 500px) {
