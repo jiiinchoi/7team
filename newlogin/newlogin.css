@@ -3,7 +3,6 @@
 }
 
 
-
 .all-box {
   padding: 32px 0px 16px;
 }
@@ -47,6 +46,8 @@
   
 } */
 
+input:focus {outline:none;}
+
 .login-email-style {
   height: 44px;
   background: transparent;
@@ -81,6 +82,10 @@
     margin: 16px 0 0;
 }
 
+.login-button-style:hover {
+  opacity: 0.8;
+} 
+
 .login-try-style {
   text-align: center;
   margin: 20px 0 14px;
@@ -107,6 +112,87 @@
     color: #8c8c8c;
     text-align: center;
 }
+
+.login-modal-box {
+  display: block;
+  position: fixed;
+  inset: 0px;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.56);
+  overflow: hidden scroll;
+}
+
+.login-modal {
+  margin: 40px auto;
+  width: 400px;
+  background-color: rgb(255, 255, 255);
+  /* border-top: 1px solid rgb(257, 257, 257); */
+  position: absolute;
+  inset: 0px;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.login-modal-header {
+  width: 100%;
+  height: 50px;
+  
+}
+.login-modal-button {
+
+  display: flex;
+}
+.modal-close {
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.pw-text-position {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    line-height: 29px;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(247, 247, 247);
+}
+
+.pw-text-position1 {
+  display: inline-block;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+  line-height: 29px;
+  overflow: hidden;
+}
+
+.ask-specific-position1 {
+  position: absolute;
+  top: 190px;
+  left: 20px;
+}
+
+.ask-specific-position2 {
+  position: absolute;
+  top: 230px;
+  left: 20px;
+}
+
+.ask-specific-position4 {
+  position: absolute;
+  top: 310px;
+}
+
 
 @media screen and (max-width:425px){
   /* 전체 크기 박스 조정 */

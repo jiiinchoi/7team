@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>마블피디아</title>
   <link rel="stylesheet" href="./newlogin.css">
+  <script src="https://kit.fontawesome.com/63b195046c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -36,12 +37,12 @@
                   </div>
                 </label>
               </div>
-              
+
               <button type="submit" class="login-button-style">로그인</button>
           </div>
           </form>
           <div class="login-try-style">
-            <button class="login-try-text">비밀번호를 잊어버리셨나요?</button>
+            <button class="login-try-text" id="open">비밀번호를 잊어버리셨나요?</button>
           </div>
           <div class="account-try-text">
             계정이 없으신가요?
@@ -50,7 +51,48 @@
         </div>
       </section>
     </div>
+
+    <!-- 크기 배정을 전부 앱솔루트로 수작업으로 조정했음 -->
+    <div class="login-modal-box" id="modal-box">
+      <div class="login-modal">
+        <div class="login-modal-button">
+          <button class="modal-close" id="close">
+            <i class="fas fa-xmark" style="font-size: 30px; color: #ff2f6e;"></i>
+          </button>
+          <div></div>
+        </div>
+
+        <div class="login-modal-header">
+          <h2 class="pw-text-position">비밀번호 재설정</h2>
+        </div>
+        <hr style="color: aliceblue; opacity: 0.4;">
+
+        <h2 class="pw-text-position1">비밀번호를 잊으셨나요?</h2>
+        <p class="account-try-text ask-specific-position1">
+          가입했던 이메일을 적어주세요.
+        </p>
+        <p class="account-try-text ask-specific-position2">
+          입력하신 이메일 주소로 비밀번호 변경 메일을 보낼게요
+        </p>
+
+        <form action="#">
+          <div class="personal-box" style="margin-top: 150px;">
+            <label for="login-service" class="login-label-size">
+              <div>
+                <input type="email" placeholder="이메일" class="login-email-style ask-specific-position">
+              </div>
+            </label>
+          </div>
+          <button type="submit" class="login-button-style ask-specific-position4">이메일 보내기</button>
+        </form>
+      </div>
+    </div>
+
+
+
+
   </div>
+  <script src="./newlogin.js"></script>
 </body>
 
 </html>
