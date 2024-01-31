@@ -223,6 +223,9 @@
   ::placeholder {
     font-size: 1.2rem; /* PC 환경에서 원하는 크기로 조정해주세요 */
   }
+  #mycomment_border {
+    margin: 5vw 10vw;
+  }
 }
 
 /* #comment_create:first-of-type {
