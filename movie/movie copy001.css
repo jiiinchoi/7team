@@ -411,7 +411,8 @@
     border: none;
   }
   .comment_content > div {
-    border: 1px solid #eee;
+    border: 1px solid #ccc;
+    background-color: #eee;
     position: relative;
     height: 300px;
   }
