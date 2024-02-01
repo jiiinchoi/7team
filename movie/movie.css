@@ -417,6 +417,7 @@
   .comment_bottom {
     position: absolute;
     bottom: 0px;
+    font-size: 0.9rem;
   }
   .comment_content > div:after {
     display: none;
