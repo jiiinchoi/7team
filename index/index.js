@@ -22,14 +22,3 @@ arrows.forEach( arrow => {
     }
   })
 })
-
-// 이미지 링크 연결
-const images = document.querySelectorAll('.FlexImage');
-
-images[].addEventListener('click', () => {
-  window.location.href = 'https://link-to-black-widow';
-});
-
-images[1].addEventListener('click', () => {
-  window.location.href = 'https://link-to-ironman';
-});
