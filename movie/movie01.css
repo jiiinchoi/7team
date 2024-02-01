@@ -1,0 +1,516 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  /* 상단 영화 이미지 */
+  #movie_image {
+    width: 100vw;
+    height: 50vw;
+    background-image: url(image\infinity_war.png);
+    background-size: contain;
+    position: relative;
+  }
+  #movie_image_content {
+    position: absolute;
+    bottom: 0px;
+    margin: 10px;
+  }
+  #movie_image_content b {
+    color: #fff;
+    font-size: 4vw;
+  }
+  #movie_image_content p {
+    color: #ccc;
+    font-size: 3vw;
+  }
+  /* 영화 줄거리 부분 */
+  .movie_main {
+    margin: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .movie_main img {
+    width: 35vw;
+    height: 45vw;
+  }
+  .movie_main_content div {
+    width: 50vw;
+    
+    text-align: center;
+  }
+  .movie_main_bold1 {
+    font-weight: bold;
+    margin-bottom: 3vw;
+  }
+  .movie_main_bold2 {
+    font-weight: bold;
+    margin-bottom: 1.5vw;
+  }
+  .movie_main_story {
+    text-align:left;
+    word-spacing: 0.5vw;
+  }
+  .movie_main_acter_box {
+    display: none;
+  }
+  .movie_main_score .fa-star, .movie_main_score .fa-star-half {
+    display: none;
+  }
+  
+  
+  /* 코멘트 기능 */
+  .comment_title {
+    padding: 10px;
+    border: 1px solid #eee ;
+  }
+  .comment_title span{
+    margin-right: 10px;
+  }
+  .comment_content {
+    border: 1px solid #eee;
+  }
+  .comment_content > div:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    border-bottom: 1px solid #eee;
+  }
+  .comment_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .comment_top .fa-star, .fa-star-half {
+    color: #fef619;
+  }
+  .comment_main {
+    padding: 10px;
+  }
+  .comment_bottom {
+    padding: 10px;
+  }
+  .comment_bottom .fa-heart {
+    color: #ff4d4d;
+  }
+  .comment_bottom .fa-comment {
+    color: #ccc;
+  }
+  
+  
+  /* <!-- 코멘트 생성 --> */
+  
+  #mycomment_border {
+    border: 1px solid #ddd;
+    margin: 0px auto;
+  }
+  
+  #mycomment_tb {
+    margin: 0px 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vw;
+    position: relative;
+    bottom: auto;
+  }
+  
+  #mycomment_tb input[type="text"] {
+    width: 99%;
+    height: 80%;
+    vertical-align: top;
+  }
+  
+  #mycomment-count {
+    position: absolute;
+    margin-top: 5px;
+    text-align: right;
+    font-size: 1rem;
+  }
+  
+  
+  #mycomment_tb input[type="text"]::placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.2rem;
+  }
+  
+  #my-char-count { /* 수정된 선택자 */
+    position: absolute;
+    bottom: 0px; /* 위치 조정 */
+    left: 0;
+    text-align: right;
+    font-size: 1.2rem;
+    color:gray
+  }
+  
+  
+  
+  .mycomment-input {
+    margin: 0px 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 20vw;
+    position: relative;
+    bottom: auto;
+  }
+  
+  .mycomment-button {
+    margin: 0px 10px;
+    /* border: 1px solid #ddd; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 7vw;
+    position: relative;
+    bottom: auto;
+  }
+  
+  #mycomment {
+    width: 99%;
+    height: 80%;
+    vertical-align: top;
+    font-size: 1.2rem;
+  }
+  
+  
+  #mycomment_top {
+    margin: 20px 10px 0;
+    /* border: 1px solid #ddd; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large
+    /* height: 10vw; */
+    /* padding: 0.5rem; */
+  }
+  
+  #comment_create {
+    margin: 0px 10px;
+    /* border: 1px solid #ddd; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+  }
+  
+  .commentbutton {
+    width: 100%;
+    height: 100%;
+    background-color: #ff2f6e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    #my-char-count {
+      font-size: 0.7rem; /* 모바일 환경에서 원하는 크기로 조정해주세요 */
+    }
+    #mycomment {
+      font-size: 0.9rem;
+    }
+    #mycomment_top {
+      font-size:medium
+    }
+  }
+  
+  @media screen and (min-width: 500px) {
+    ::placeholder {
+      font-size: 1.2rem; /* PC 환경에서 원하는 크기로 조정해주세요 */
+    }
+    #mycomment_border {
+      margin: 5vw 10vw;
+    }
+  }
+  
+  /* #comment_create:first-of-type {
+    margin-top: 40px; 첫 번째 요소의 상단 마진 설정
+  } */
+  
+  .rating-text {
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  #result {
+    font-size: x-large;
+    font-style: bold;
+    padding-right: 0.2em;
+  }
+  
+  .star {
+    position: relative;
+    font-size: 2rem;
+    color: #ddd;
+  }
+  
+  .star input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .star span {
+    width: 0;
+    position: absolute; 
+    left: 0;
+    color: yellow;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  /* 헤더 영역 */
+  #header {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #header a {
+    text-align: center;
+  }
+  #header .header_title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  #header .header_subtitle {
+    color: #ccc;
+    font-size: 0.8rem;
+  }
+  #header a:link, #header a:visited {
+    text-decoration: none;
+    color:#5089fa;
+    font-weight: bold;
+  }
+  #search {
+    padding: 7px;
+    padding-left: 30px;
+    min-width: 70vw;
+    background-color: #eee;
+    background-image: url(img/search.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+    opacity: 0.5;
+    border: none;
+    border-radius: 5px;
+  }
+  #header ul {
+    list-style: none;
+  }
+  #header_login_join {
+    display: flex;
+    justify-content: center;
+  }
+  #header_login_join li {
+    margin: 0px 5px;
+    
+  }
+  #header_login_join a {
+    padding: 3px;
+    font-size: 0.9rem;
+  }
+  #header_login_join a:link, #header_login_join a:visited {
+    color: #aaa;
+    font-weight: normal;
+  }
+  /* 푸터 영역 */
+  #footer {
+    width: 100vw;
+    background-color: #aaa;
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+  
+  /*도넛그래프 1번 
+  
+  .donut1 {
+    width: calc(20% - 16px);
+    padding-bottom: calc(20% - 16px);
+    margin: 13vw;
+    margin-top: -8vw;
+    margin-bottom: 0vw;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    transition: background .3s ease-in-out;
+    background: conic-gradient(#c0e0ff 0% 72%, #F2F2F2 72% 100%);
+  }
+  
+  .donut1::before {
+    color: #fff;
+    width: 70%;
+    background: #7270db;
+    border-radius: 50%;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    display: block;
+    content: attr(data-percent)'%';
+    transform: skew(-0.03deg);
+    margin: auto;
+    font-size: 1.1vw;
+    font-size: 2vw;
+    padding: calc(35% - 1.3vw) 0;
+  }*/
+  
+  
+  /*막대그래프
+  .progress-bar {
+      width: 100%;
+      height: 30px;
+      background-color: #dedede;
+      font-weight: 600;
+      font-size: .8rem;
+  }
+  
+  .progress-bar .progress {
+      width: 72%;   
+      height: 30px;
+      padding: 0;
+      text-align: center;
+      background-color: #4F98FF;
+      color: #111;
+    
+    dfdddd}*/
+  
+  @media screen and (min-width: 426px) {
+    /* 상단 영화 이미지 영역 */
+    #movie_image {
+      height: 50vw;
+      background-size: cover;
+      position: relative;
+    }
+    #movie_image_content {
+      position: absolute;
+      bottom: 10px;
+      left: 60px;
+    }
+    #movie_image_content b {
+      font-size: 2vw;
+    }
+    #movie_image_content p {
+      font-size: 1vw;
+    }
+    /* 영화 줄거리 영역 */
+    .movie_main {
+      margin: 5vw 10vw;
+      align-items:start;
+      font-size: 1vw;
+    }
+    .movie_main_content {
+      background-color: #eee;
+      height: 37vw;
+    }
+    .movie_main img {
+      width: 25vw;
+      height: 30vw;
+    }
+    .movie_main_score {
+      margin-top: 1vw;
+    }
+    .movie_main_score .fa-star, .movie_main_score .fa-star-half {
+      display: inline-block;
+    }
+    .movie_main_bold1 {
+      margin-top: 0.5vw;
+    }
+    .movie_main_content .fa-star, .fa-star-half {
+      color: #fef619;
+    }
+    .movie_main_story {
+      width: 20vw;
+      margin: 0px auto;
+    }
+    .movie_main_acter_box {
+      display: block;
+    }
+    .movie_main_acter {
+      width: 20vw;
+      margin: 0px auto;
+      text-align:left;
+      /* word-spacing: 0.5vw; */
+    }
+    .movie_main_story_acter {
+      display: flex;
+    }
+    /* 코멘트 영역 */
+    #comment {
+      margin: 40px 70px;
+    }
+    .comment_title {
+      font-size: 1.25rem;
+    }
+    .comment_content {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 300px 300px;
+      border: none;
+    }
+    .comment_content > div {
+      border: 1px solid #eee;
+      position: relative;
+    }
+    .comment_bottom {
+      position: absolute;
+      bottom: 0px;
+    }
+    .comment_content > div:after {
+      display: none;
+    }
+  
+    /*버튼 추가*/
+    #mybutton {
+      background-color: rgba(255, 255, 255, .2);
+      border-radius: 4px;
+      color: #fff;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .7);
+      text-shadow: 0px 1px 0px rgba(0, 0, 0, .4);
+    }
+    #mybutton:hover {
+      background-color: rgba(255, 255, 255, .3);
+    }
+  
+    /* 헤더, 푸터 영역 */
+    #header {
+      margin: 15px 80px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      position: relative;
+
+    }
+    #header > a {
+      margin: 0px;
+    }
+    #header > ul {
+      position: absolute;
+      right: 0px;
+      display: flex;
+    }
+    #search {
+      min-width: 200px;
+    }
+    .preview, .main_rank {
+      font-size: 2rem;
+      margin: 1.25rem;
+    }
+    #footer p {
+      font-size: 1rem;
+    }
+  }
+  

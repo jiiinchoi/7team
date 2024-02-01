@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="movie.css">
   <script src="https://kit.fontawesome.com/63b195046c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header>
     <div id="header">
@@ -20,18 +21,21 @@
       </ul>
     </div>
   </header>
+</body>
+    
   <!-- 상단 영화 이미지 -->
   <div id="movie_image">
     <div id="movie_image_content">
-      <p><b>어벤져스:엔드게임</b></p>
-      <p>2019ㆍ액션/모험/SFㆍ미국</p>
-      <p>3시간 1분ㆍ12세</p>
+      <p><b>어벤져스:인피니티워</b></p>
+      <p>2018ㆍ액션/모험/SFㆍ미국</p>
+      <p>2018ㆍ2시간 9분ㆍ12세</p>
     </div>
   </div>
-  
+
+ 
   <!-- 영화 줄거리 부분 -->
   <div class="movie_main">
-    <img src="../index/img/poster_Endgame.png" alt="">
+    <img src="..\index\img\poster_InfinityWar.png" alt="">
     <div class="movie_main_content">
       <div class="movie_main_score">
         <i class="fas fa-star"></i>
@@ -44,16 +48,54 @@
       <div class="movie_main_story_acter">
         <div class="movie_main_story_box">
           <p class="movie_main_bold2">영화 줄거리</p>
-          <p class="movie_main_story">인피니티 워 이후 절반만 살아남은 지구 마지막 희망이 된 어벤져스 먼저 떠난 그들을 위해 모든 것을 걸었다! 위대한 어벤져스 운명을 바꿀 최후의 전쟁이 펼쳐진다!</p>
+          <p class="movie_main_story">새로운 조합을 이룬 어벤져스, 역대 최강 빌런 타노스에 맞서 세계의 운명이 걸린 인피니티 스톤을 향한 무한 대결이 펼쳐진다! 마블의 클라이맥스를 목격하라!</p>
         </div>
         <div class="movie_main_acter_box">
           <p class="movie_main_bold2">감독/출연</p>
           <p class="movie_main_acter">감독 : 안소니 루소, 조 루소</p>
-          <p class="movie_main_acter">출연 : 로버트 다우니 주니어, 크리스 에반스, 크리스 헴스워스, 마크 러팔로</p>
+          <p class="movie_main_acter">출연 : 로버트 다우니 주니어, 조슈 브롤린, 크리스 헴스워스, 마크 러팔로</p>
         </div>
       </div>
     </div>
   </div>
+
+  
+  <!-- 막대 그래프 
+<div class="progress-bar">           
+  <div class="progress"> </div>
+</div>-->
+
+<!-- 도넛그래프
+<div class="donut" data-percent="85.4"></div>-->
+
+ <!-- 코멘트 생성 -->
+ <div id="mycomment_border">
+  <div id="mycomment_top"> 
+    <h3>감상평</h3> 
+    <p>별점을 선택해주세요</p> 
+  </div>
+  <div id="comment_create">
+    <span class="star">
+      ★★★★★
+      <span>★★★★★</span>
+      <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+    </span>
+    <div class="rating-text">
+      <span id="result"></span>
+    </div>
+  </div>
+  <div class="mycomment-input">
+    <textarea id="mycomment" placeholder="평점은 최대 500자까지 등록 가능합니다. 영화와 상관 없는 내용은 제재를 받을 수 있습니다."></textarea>
+    <span id="my-char-count"></span>
+  </div>
+    <div class="mycomment-button">
+      <button class="commentbutton">등록하기</button>
+    </div>
+
+  </div>
+  </div>
+</div>
+ 
   <!-- 코멘트 기능 -->
   <div id="comment">
     <div class="comment_title">
@@ -72,7 +114,7 @@
           <div>user1</div>
         </div>
         <div class="comment_main">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta, itaque voluptate molestias amet nihil dolore reiciendis inventore eius iure!
+          내년까지 살아가야 할 이유가 생겼습니다.
         </div>
         <div class="comment_bottom">
           <i class="fas fa-heart"></i> 1,345
@@ -90,8 +132,8 @@
           <div>user2</div>
         </div>
         <div class="comment_main">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta, itaque voluptate molestias amet nihil dolore reiciendis inventore eius iure!
-        </div>
+          감독의 말대로 메인빌런인 타노스의 시점에서 흘러가는 영화, 그리고 몇몇히어로들이 먼지가될때 관객들의 멘탈도 먼지가 됨
+          </div>
         <div class="comment_bottom">
           <i class="fas fa-heart"></i> 764
           <i class="fas fa-comment"></i> 10
@@ -108,7 +150,7 @@
           <div>user3</div>
         </div>
         <div class="comment_main">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta, itaque voluptate molestias amet nihil dolore reiciendis inventore eius iure!
+          첫째로 이렇게 희망과 꿈이 없는 영화는 처음.. 둘째는 악당인 타노스에게 반하게 되고..셋번째로는 이번편이 끝이 아니고 2부가 나올것을 아니까 제발 영화가 끝나지 않길 바랬다..
         </div>
         <div class="comment_bottom">
           <i class="fas fa-heart"></i> 387
@@ -125,7 +167,7 @@
           <div>user4</div>
         </div>
         <div class="comment_main">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta, itaque voluptate molestias amet nihil dolore reiciendis inventore eius iure!
+          언제부턴가 스타워즈, 스타트렉과 함께 성장한 세대를 더이상 부러워하지 않게 만들어 준 소중한 시리즈의 작은 방점. 객관적 평가를 불가하게 만든다.
         </div>
         <div class="comment_bottom">
           <i class="fas fa-heart"></i> 245
@@ -142,7 +184,7 @@
           <div>user5</div>
         </div>
         <div class="comment_main">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta, itaque voluptate molestias amet nihil dolore reiciendis inventore eius iure!
+          시리즈가 갈수록 힘이빠지는게 아니라 역대급으로 경신... 다시 예매하러 감 .꼭 아무 스포없이 가세요
         </div>
         <div class="comment_bottom">
           <i class="fas fa-heart"></i> 221
@@ -159,7 +201,7 @@
           <div>user6</div>
         </div>
         <div class="comment_main">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta, itaque voluptate molestias amet nihil dolore reiciendis inventore eius iure!
+          행복했던 3시간 아니 10년 이었습니다.
         </div>
         <div class="comment_bottom">
           <i class="fas fa-heart"></i> 87
@@ -168,30 +210,9 @@
       </div>
     </div>
   </div>
-  <!-- 코멘트 생성 -->
-  <div id="mycomment_border">
-      <div id="mycomment_top"> 
-        <h3>감상평</h3> 
-        <p>별점을 선택해주세요</p> 
-      </div>
-      <div id="comment_create">
-        <span class="star">
-          ★★★★★
-          <span>★★★★★</span>
-          <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
-        </span>
-        <div class="rating-text">
-          <span id="result"></span>
-        </div>
-      </div>
-      <div class="mycomment-input">
-        <textarea id="mycomment" placeholder="평점은 최대 500자까지 등록 가능합니다. 영화와 상관 없는 내용은 제재를 받을 수 있습니다."></textarea>
-        <span id="my-char-count"></span>
-      </div>
-        <div class="mycomment-button">
-          <button class="commentbutton">등록하기</button>
-        </div>
-  </div>
+
+ 
+
   <footer>
     <div id="footer">
       <p>서비스 이용약관 | 개인정보 처리방침 | 회사 안내</p>
@@ -201,5 +222,7 @@
     </div>
   </footer>
 <script src="movie.js"></script>
+
+
 </body>
 </html>
