@@ -96,11 +96,6 @@
   color: #ccc;
 }
 
-.heart_number, .comment_number {
-  display: inline-block;
-  margin-left: 0.5vw;
-}
-
 /* <!-- 코멘트 생성 --> */
 
 #mycomment_border {
@@ -412,12 +407,13 @@
   .comment_content {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 300px 300px; 
     border: none;
   }
   .comment_content > div {
     border: 1px solid #eee;
     position: relative;
+    height: 300px;
   }
   .comment_bottom {
     position: absolute;

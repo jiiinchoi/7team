@@ -51,14 +51,14 @@ button.addEventListener("click", () => {
     <i class="fas fa-star"></i>
     <i class="fas fa-star-half"></i>
   </div>
-  <div class="comment_username">Myname</div>
+  <div>Myname</div>
 </div>
 <div class="comment_main">
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta, itaque voluptate molestias amet nihil dolore reiciendis inventore eius iure!
 </div>
 <div class="comment_bottom">
-  <i class="fas fa-heart"></i><p class="heart_number">0</p>
-  <i class="fas fa-comment"></i><p class="comment_number">0</p>
+  <i class="fas fa-heart"></i> 0
+  <i class="fas fa-comment"></i> 0
 </div>`
   DivStar = Div.querySelector(".comment_star")
   if (starNumber.innerHTML !== null) {
