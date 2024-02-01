@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 .all-box {
   padding: 32px 0px 16px;
 }
@@ -176,11 +175,14 @@ input:focus {outline:none;}
 }
 /* 푸터 영역 */
 #footer {
+  /* position: fixed;
+  bottom: 0; */
   width: 100vw;
   background-color: #aaa;
-  padding: 10px;
+  pad ding: 10px;
   font-size: 0.7rem;
 }
+
 /* 모달 영역 */
 .login-modal-box {
   display: none;
@@ -193,8 +195,8 @@ input:focus {outline:none;}
 
 .login-modal {
   margin: 40px auto;
-  width: 400px;
-  height: 400px;
+  width: 25rem;
+  height: 25rem;
   background-color: rgb(255, 255, 255);
   /* border-top: 1px solid rgb(257, 257, 257); */
   position: absolute;
@@ -236,7 +238,7 @@ input:focus {outline:none;}
 .pw-text-position1 {
   display: inline-block;
   position: absolute;
-  top: 150px;
+  top: 8.4rem;
   left: 20px;
   text-align: center;
   font-size: 17px;
@@ -307,4 +309,9 @@ input:focus {outline:none;}
   #footer p {
     font-size: 1rem;
   }
+  #footer {
+    position: fixed;
+    bottom: 0;
+  }
+  
 }
