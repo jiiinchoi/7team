@@ -36,6 +36,7 @@ textarea.setAttribute("placeholder", placeholderText);
 
 
 // 버튼 클릭 숫자 +1 기능
+
 // var increaseBtn = document.getElementById("increaseBtn");
 // var numberElement = document.getElementById("number");
 
