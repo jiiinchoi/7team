@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index/index.css">
+</head>
+<body>
+  <header>
+    <div id="header">
+      <a href="index.html"><p class="header_subtitle">마블 영화의 모든 것</p><p class="header_title">MARVEL PEDIA</p></a>
+      <ul>
+        <li><input type="text" id="search"></li>
+        <ul id="header_login_join">
+          <li><a href="newlogin/newlogin.html" id="header_login">로그인</a></li>|
+          <li><a href="newsignup/newsignup.html" id="header_join">회원가입</a></li>
+        </ul>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="mainContainer">
+      <!-- <p class="preview">신작 영화 예고편</p> -->
+      <video src="index/video/preview.mp4" width="100%" muted autoplay></video>
+      <!-- <div class="mainVideoBox">
+        <iframe class="mainVideo" src="https://www.youtube.com/embed/h3rKe6DdC18?autoplay=1" frameborder="0" allowfullscreen></iframe>
+      </div> -->
+      <div class="main">
+        <p class="main_rank">국내 관객수 순위</p>
+        <div class="mainFlex_box">
+          <div class="mainFlex">
+            <!-- <button class="arrow" id="left">&lang;</button> -->
+            <button class="arrow" id="right">&rang;</button>
+            <div class="movie_box"><img class="FlexImage" src="./index/img/poster_Endgame.png" alt="엔드게임">
+              <p class="movie_name">1위 | 어벤져스: 엔드게임</p>
+              <p class="movie_sub">2019ㆍ미국ㆍDisney</p>
+              <p class="movie_sub">누적 관객:1390만명</p></div>
+            <div class="movie_box"><img class="FlexImage" src="./index/img/poster_InfinityWar.png" alt="인피니티워">
+            <p class="movie_name">2위 | 어벤져스: 인피니티워</p>
+              <p class="movie_sub">2018ㆍ미국ㆍDisney</p>
+              <p class="movie_sub">누적 관객:1120만명</p></div>
+            <div class="movie_box"><img class="FlexImage" src="./index/img/poster_avengers.png" alt="어벤져스">
+            <p class="movie_name">3위 | 어벤져스</p>
+              <p class="movie_sub">2012ㆍ미국ㆍSony</p>
+              <p class="movie_sub">누적 관객:760만명</p></div>
+            <div class="movie_box"><img class="FlexImage" src="./index/img/poster_ironman3.png" alt="아이언맨3">
+            <p class="movie_name">4위 | 아이언맨3</p>
+              <p class="movie_sub">2013ㆍ미국ㆍSony</p>
+              <p class="movie_sub">누적 관객:710만명</p></div>    
+            <div class="movie_box"><img class="FlexImage" src="./index/img/poster_CivilWar.png" alt="시빌워">
+              <p class="movie_name">5위 | 캡틴아메리카: 시빌워</p>
+              <p class="movie_sub">2016ㆍ미국ㆍDisney</p>
+              <p class="movie_sub">누적 관객:670만명</p></div>
+            <div class="movie_box"><img class="FlexImage" src="./index/img/poster_FarFromHome.png" alt="파프롬홈">
+            <p class="movie_name">6위 | 스파이더맨: 파 프롬 홈</p>
+              <p class="movie_sub">2018ㆍ미국ㆍSony</p>
+              <p class="movie_sub">누적 관객:660만명</p></div>
+            <div class="movie_box"><img class="FlexImage" src="./index/img/poster_Multiverse.png" alt="멀티버스">
+            <p class="movie_name">7위 | 닥터 스트레인지: 대혼돈 멀티버스</p>
+              <p class="movie_sub">2012ㆍ미국ㆍDiseny</p>
+              <p class="movie_sub">누적 관객:580만명</p></div>
+            <div class="movie_box"><img class="FlexImage" src="./index/img/poster_Ultron.png" alt="울트론">
+            <p class="movie_name">8위 | 어벤져스: 에이지 오브 울트론</p>
+              <p class="movie_sub">2015ㆍ미국ㆍSony</p>
+              <p class="movie_sub">누적 관객:520만명</p></div>            
+            <div class="movie_box"><img class="FlexImage" src="./index/img/poster_Ragnarok.png" alt="라그나로크">
+              <p class="movie_name">9위 | 토르: 라그나로크</p>
+                <p class="movie_sub">2017ㆍ미국ㆍDisney</p>
+                <p class="movie_sub">누적 관객:520만명</p></div>
+            <div class="movie_box"><img class="FlexImage" src="./index/img/poster_NoWayHome.png" alt="노웨이홈">
+              <p class="movie_name">10위 | 스파이더맨: 노 웨이 홈</p>
+                <p class="movie_sub">2021ㆍ미국ㆍSony</p>
+                <p class="movie_sub">누적 관객:500만명</p></div>            
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <p class="main_rank">WATCHA 평점 순위</p>
+        <div class="mainFlex">
+          <button class="arrow" id="right">&rang;</button>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/poster_ironman1.png" alt="아이언맨1">
+            <p class="movie_name">1위 | 아이언맨</p>
+            <p class="movie_sub">2008ㆍ미국ㆍCJ</p>
+            <p class="movie_sub">WATCHA평점 4.2 / 5.0</p></div>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/poster_avengers.png" alt="어벤져스1">
+            <p class="movie_name">2위 | 어벤져스</p>
+            <p class="movie_sub">2012ㆍ미국ㆍSony</p>
+            <p class="movie_sub">WATCHA평점 4.2 / 5.0</p></div>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/poster_ironman3.png" alt="아이언맨3">
+            <p class="movie_name">3위 | 아이언맨3</p>
+            <p class="movie_sub">2013ㆍ미국ㆍSony</p>
+            <p class="movie_sub">WATCHA평점 4.1 / 5.0</p></div>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/poster_HomeComing.png" alt="홈커밍">
+            <p class="movie_name">4위 | 스파이더맨: 홈커밍</p>
+            <p class="movie_sub">2017ㆍ미국ㆍSony</p>
+            <p class="movie_sub">WATCHA평점 4.1 / 5.0</p></div>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/poster_Endgame.png" alt="엔드게임">
+            <p class="movie_name">5위 | 어벤져스: 엔드게임</p>
+            <p class="movie_sub">2019ㆍ미국ㆍDisney</p>
+            <p class="movie_sub">WATCHA평점 4.1 / 5.0</p></div>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/poster_InfinityWar.png" alt="인피니티">
+            <p class="movie_name">6위 | 어벤져스: 인피니티 워</p>
+            <p class="movie_sub">2018ㆍ미국ㆍDisney</p>
+            <p class="movie_sub">WATCHA평점 4.0 / 5.0</p></div>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/poster_WinterSoldier.png" alt="윈터솔져">
+            <p class="movie_name">7위 | 캡틴 아메리카: 윈터솔져</p>
+            <p class="movie_sub">2014ㆍ미국ㆍSony</p>
+            <p class="movie_sub">WATCHA평점 4.0 / 5.0</p></div>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/poster_ironman2.png" alt="아이언맨2">
+            <p class="movie_name">8위 | 아이언맨2</p>
+            <p class="movie_sub">2010ㆍ미국ㆍCJ</p>
+            <p class="movie_sub">WATCHA평점 4.0 / 5.0</p></div>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/poster_NoWayHome.png" alt="노웨이홈">
+            <p class="movie_name">9위 | 스파이더맨: 노 웨이 홈</p>
+            <p class="movie_sub">2021ㆍ미국ㆍSony</p>
+            <p class="movie_sub">WATCHA평점 3.9 / 5.0</p></div>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/poster_Galaxy2.png" alt="가오갤2">
+            <p class="movie_name">10위 | 가디언즈 오브 갤럭시 VOL.2</p>
+            <p class="movie_sub">2017ㆍ미국ㆍDisney</p>
+            <p class="movie_sub">WATCHA평점 3.8 / 5.0</p></div>
+        </div>
+      </div>
+      <div class="main">
+        <p class="main_rank">주요 등장인물</p>
+        <div class="mainFlex">
+          <button class="arrow" id="right">&rang;</button>
+          <div class="movie_box">
+            <a href="./actor/actor1.html">
+              <img class="FlexImage" src="./index/img/character_blackWidow_01.png" alt="블랙위도우">
+              <p class="movie_name">블랙위도우</p>
+              <p class="movie_sub">작중본명 : 나타샤 로마노프</p>
+              <p class="movie_sub">담당배우 : 스칼렛 요한슨</p>
+            </a>
+          </div>
+      
+          <div class="movie_box"><img class="FlexImage" src="./index/img/character_ironman_01.png" alt="아이언맨">
+            <p class="movie_name">아이언맨</p>
+            <p class="movie_sub">작중본명 : 토니 스타크</p>
+            <p class="movie_sub">담당배우 : 로버트 다우니 주니어</p></div>
+
+          <div class="movie_box"><img class="FlexImage" src="./index/img/character_spiderman_01.png" alt="스파이더맨">
+            <p class="movie_name">스파이더맨</p>
+            <p class="movie_sub">작중본명 : 피터 파커</p>
+            <p class="movie_sub">담당배우 : 톰 홀랜드</p></div>
+
+          <div class="movie_box"><img class="FlexImage" src="./index/img/character_thor_01.png" alt="토르">
+            <p class="movie_name">토르</p>
+            <p class="movie_sub">작중본명 : 토르 오딘손</p>
+            <p class="movie_sub">담당배우 : 크리스 헴스워스</p></div>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/character_Hawkeye.png" alt="호크아이">
+            <p class="movie_name">호크아이</p>
+            <p class="movie_sub">작중본명 : 클린트 바튼</p>
+            <p class="movie_sub">담당배우 : 제레미 레너</p></div>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/character_CaptainAmerica.png" alt="캡틴아메리카">
+            <p class="movie_name">캡틴 아메리카</p>
+            <p class="movie_sub">작중본명 : 스티브 로저스</p>
+            <p class="movie_sub">담당배우 : 크리스 에반스</p></div>                  
+          <div class="movie_box"><img class="FlexImage" src="./index/img/character_DoctorStrange.png" alt="스트레인지">
+            <p class="movie_name">닥터 스트레인지</p>
+            <p class="movie_sub">작중본명 : 스티븐 스트레인지 </p>
+            <p class="movie_sub">담당배우 : 베네딕트 컴버베치</p></div>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/character_ScarletWitch.png" alt="스칼렛위치">
+            <p class="movie_name">스칼렛 위치</p>
+            <p class="movie_sub">작중본명 : 완다 막시모프 </p>
+            <p class="movie_sub">담당배우 : 엘리자베스 올슨</p></div>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/character_Hulk.png" alt="헐크">
+            <p class="movie_name">헐크</p>
+            <p class="movie_sub">작중본명 : 브루스 배너</p>
+            <p class="movie_sub">담당배우 : 마크 러팔로</p></div>
+          <div class="movie_box"><img class="FlexImage" src="./index/img/character_Black Panther.png" alt="블랙펜서">
+            <p class="movie_name">블랙팬서</p>
+            <p class="movie_sub">작중본명 : 트찰라</p>
+            <p class="movie_sub">담당배우 : 채드윅 보즈먼</p></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div id="footer">
+      <p>서비스 이용약관 | 개인정보 처리방침 | 회사 안내</p>
+      <p>고객센터 | 02-123-1234</p>
+      <p>주식회사 마블피디아 | 부산광역시 남구 용소로 45</p>
+      <p>사업자 등록번호 123-00-12345</p>
+    </div>
+  </footer>
+  <script src="index/index.js"></script>
+</body>
+</html>
