@@ -25,9 +25,6 @@
   </header>
   <div class="all-box-position">
     <div class="all-box">
-      <header class="login-image-text-position">
-        <p>이미지</p>
-      </header>
       <h2 class="login-position">회원가입</h2>
       <section>
         <div>
@@ -36,7 +33,7 @@
               <div class="personal-box">
                     <label for="login-service" class="login-label-size">
                       <div>
-                        <input type="text" placeholder="이름" class="login-email-style">
+                        <input type="text" placeholder="이름" class="login-email-style" required>
                       </div>
                     </label>
               </div>
@@ -46,7 +43,7 @@
               <div class="personal-box">
                     <label for="login-service" class="login-label-size">
                       <div>
-                        <input type="email" placeholder="이메일" class="login-email-style">
+                        <input type="email" placeholder="이메일" class="login-email-style" required>
                       </div>
                     </label>
               </div>
@@ -56,10 +53,21 @@
               <div class="personal-box">
                       <label for="login-service" class="login-label-size">
                         <div>
-                          <input type="password" placeholder="비밀번호" class="login-email-style">
+                          <input type="password" placeholder="비밀번호" class="login-email-style" required>
                         </div>
                       </label>
               </div>
+              
+              <div class="login-margin"></div>
+
+              <div class="personal-box">
+                <label for="login-service" class="login-label-size">
+                  <div>
+                    <input type="password" placeholder="비밀번호 확인" class="login-email-style" required>
+                  </div>
+                </label>
+              </div>
+              <div class="login-margin"></div>
 
               <button type="button" class="login-language">
                 <i class="fas fa-earth-africa login-language-style" style="font-size: 24px;"></i>
