@@ -14,7 +14,7 @@
 .NavImage {
   width: 100%;
   height: 100%;
-  border-radius: 0.9375rem;
+  /* border-radius: 0.9375rem; */
 }
 
 .NavContainer>img {
@@ -55,9 +55,9 @@
 /* } */
 
 .GridImage {
-  width: 200px;
-  height: 300px;
-  border-radius: 0.9375rem;
+  width: 40vw;
+  height: 60vw;
+  /* border-radius: 0.9375rem; */
 }
 
 .MainContainer {
@@ -89,6 +89,12 @@
   /* padding: 50px; 그리드 아이템 안의 여백 */
   text-align: center;
 }
+#grid_text {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 4vw;
+}
+
 /* 헤더 영역 */
 #header {
   margin: 20px;

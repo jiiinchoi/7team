@@ -53,34 +53,6 @@
       </div>
     </div>
   </div>
-  <!-- 코멘트 생성 -->
-  <div id="mycomment_border">
-    <div id="mycomment_top"> 
-      <h3>감상평</h3> 
-      <p>별점을 선택해주세요</p> 
-    </div>
-    <div id="comment_create">
-      <span class="star">
-        ★★★★★
-        <span>★★★★★</span>
-        <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
-      </span>
-      <div class="rating-text">
-        <span id="result"></span>
-      </div>
-    </div>
-    <div class="mycomment-input">
-      <textarea id="mycomment" placeholder="평점은 최대 500자까지 등록 가능합니다. 영화와 상관 없는 내용은 제재를 받을 수 있습니다."></textarea>
-      <span id="my-char-count"></span>
-    </div>
-      <div class="mycomment-button">
-        <button class="commentbutton">등록하기</button>
-      </div>
-  
-    </div>
-    </div>
-  </div>
-
   <!-- 코멘트 기능 -->
   <div id="comment">
     <div class="comment_title">
@@ -195,11 +167,30 @@
       </div>
     </div>
   </div>
-  <span class="star">
-    ★★★★★
-    <span>★★★★★</span>
-    <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
-  </span>
+  <!-- 코멘트 생성 -->
+  <div id="mycomment_border">
+      <div id="mycomment_top"> 
+        <h3>감상평</h3> 
+        <p>별점을 선택해주세요</p> 
+      </div>
+      <div id="comment_create">
+        <span class="star">
+          ★★★★★
+          <span>★★★★★</span>
+          <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+        </span>
+        <div class="rating-text">
+          <span id="result"></span>
+        </div>
+      </div>
+      <div class="mycomment-input">
+        <textarea id="mycomment" placeholder="평점은 최대 500자까지 등록 가능합니다. 영화와 상관 없는 내용은 제재를 받을 수 있습니다."></textarea>
+        <span id="my-char-count"></span>
+      </div>
+        <div class="mycomment-button">
+          <button class="commentbutton">등록하기</button>
+        </div>
+  </div>
   <footer>
     <div id="footer">
       <p>서비스 이용약관 | 개인정보 처리방침 | 회사 안내</p>
