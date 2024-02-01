@@ -99,8 +99,9 @@
 /* <!-- 코멘트 생성 --> */
 
 #mycomment_border {
-  border: 1px solid #ddd;
+  border: none;
   margin: 0px auto;
+  margin-bottom: 10vw;
 }
 
 #mycomment_tb {
@@ -207,7 +208,7 @@
   border-radius: 6px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 426px) {
   #my-char-count {
     font-size: 0.7rem; /* 모바일 환경에서 원하는 크기로 조정해주세요 */
   }
@@ -219,12 +220,13 @@
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 426px) {
   ::placeholder {
     font-size: 1.2rem; /* PC 환경에서 원하는 크기로 조정해주세요 */
   }
   #mycomment_border {
-    margin: 5vw 10vw;
+    margin: 5vw 20vw;
+    border: 1px solid #ddd;
   }
 }
 
