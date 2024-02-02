@@ -100,3 +100,91 @@ function changeIcon(icon) {
     }, 2000);
   }
 }
+
+// 감상평 등록 기능
+const mycomment = document.querySelector("#mycomment")
+const button = document.querySelector(".commentbutton")
+const commentArea = document.querySelector(".comment_content")
+const commentRegister = document.querySelector(".comment_content_one")
+const starNumber = document.querySelector("#result")
+
+button.addEventListener("click", () => {
+  let Div = document.createElement("div")
+  Div.classList.add("comment_content_one")
+  Div.innerHTML = `<div class="comment_top">
+  <div class="comment_star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half"></i>
+  </div>
+  <div>Myname</div>
+</div>
+<div class="comment_main">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta, itaque voluptate molestias amet nihil dolore reiciendis inventore eius iure!
+</div>
+<div class="comment_bottom">
+  <i class="fas fa-heart"></i> 0
+  <i class="fas fa-comment"></i> 0
+</div>`
+  DivStar = Div.querySelector(".comment_star")
+  if (starNumber.innerHTML !== null) {
+    switch(starNumber.innerHTML) {
+      case "0.0" : DivStar.innerHTML = ``
+        break;
+      case "0.5" : DivStar.innerHTML = `<i class="fas fa-star-half"></i>`
+        break;
+      case "1.0" : DivStar.innerHTML = `<i class="fas fa-star"></i>`
+        break;
+      case "1.5" : DivStar.innerHTML = `<i class="fas fa-star"></i>
+      <i class="fas fa-star-half"></i>`
+        break;
+      case "2.0" : DivStar.innerHTML = `<i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>`
+        break;
+      case "2.5" : DivStar.innerHTML = `<i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half"></i>`
+        break;
+      case "3.0" : DivStar.innerHTML = `<i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>`
+        break;
+      case "3.5" : DivStar.innerHTML = `<i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half"></i>`
+        break;
+      case "4.0" : DivStar.innerHTML = `<i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>`
+        break;
+      case "4.5" : DivStar.innerHTML = `<i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half"></i>`
+        break;
+      case "5.0" : DivStar.innerHTML = `<i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>`
+        break;
+    }
+  }
+
+  let DivMain = Div.querySelector(".comment_main")
+  DivMain.textContent = mycomment.value
+  commentArea.appendChild(Div)
+  mycomment.value=""
+
+  let commentNumber = document.querySelector(".comment_title_number")
+  let commentNumberInt = Number(commentNumber.innerHTML)
+  commentNumberInt += 1
+  commentNumber.innerHTML = commentNumberInt
+  console.log(commentNumber)
+  console.log(commentNumberInt)
+})
