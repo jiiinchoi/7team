@@ -124,6 +124,7 @@ a:active {
   display: flex;
   overflow: auto;
   width: 100%;
+  cursor: pointer;
 }
 .mainFlex .movie_box {
   margin: 0px 2vw;
