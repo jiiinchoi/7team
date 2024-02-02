@@ -125,7 +125,7 @@ button.addEventListener("click", () => {
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta, itaque voluptate molestias amet nihil dolore reiciendis inventore eius iure!
 </div>
 <div class="comment_bottom">
-  <i class="fas fa-heart"></i> 0
+  <i class="fa-regular fa-heart"></i> 0
   <i class="fas fa-comment"></i> 0
 </div>`
   DivStar = Div.querySelector(".comment_star")
